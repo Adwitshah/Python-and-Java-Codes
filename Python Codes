@@ -62,3 +62,42 @@ if(temp == reverse_number):
     print("It is a palindrome number")
 else:
     print("It is not a palindrome number")
+    
+ 
+(Q9)
+import time
+
+def Acceleration_test():
+  sel1 = float(input("Press 1 to start test"))
+  if(sel1==1):
+    start = time.time()
+    sel2 = float(input("Press 1 to end the test"))
+    if(sel2==1):
+      print(time.time()-start)
+      return time.time() - start
+      
+
+
+  else:
+    print("invalid")
+
+def Endurance_test():
+  sel3 = float(input("Press 1 to start test"))
+  if(sel3==1):
+   start = time.time()
+   sel3 = float(input("Press 1 to end the test"))
+   if(sel3==1):
+      print(time.time()-start)
+      return time.time() - start
+      
+
+      
+
+choice= 1
+while choice!=0: 
+
+  Acceleration_test() 
+  choice= float(input("press 2 to start endurance test"))
+  if choice==2:
+    Endurance_test()
+  choice= float(input("press 0 to exit."))
