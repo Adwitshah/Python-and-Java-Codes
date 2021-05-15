@@ -135,3 +135,37 @@ else:
          print("The second lap is the fastest. (", y1, ":", y2, ":", y3, ")")
      else:
          print("The third lap is the fastest. (", z1, ":", z2, ":", z3, ")")
+         
+         
+(Q11)
+
+x1 = int(input("First number: "))
+x2 = int(input("Second number: "))
+
+x3 = (~x2+1) + x1
+
+print("The difference between the two numbers is ", x3, ".") 
+
+
+(Q12)
+
+t1 = input("Enter the first lap time in mm:ss:msms (dont add colons in between:) ")
+t2 = input("Enter the second lap time in mm:ss:msms (dont add colons in between:) ")
+t3 = input("Enter the third lap time in mm:ss:msms  (dont add colons in between:) ")
+
+x = int(t1)
+y = int(t2)
+z = int(t3)
+
+temp = x if x < y else y
+answer = z if z < temp else temp
+
+a = str(answer)
+
+mm = a[0:2]
+ss = a[2:4]
+msms = a[4:6]
+
+print("The fastest lap time is ", mm, ":", ss, ":", msms, ".")
+
+(Q13)
