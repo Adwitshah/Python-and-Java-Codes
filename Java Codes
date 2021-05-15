@@ -1,0 +1,311 @@
+(Q1)
+
+public class Half Pyramid {
+
+   public static void main(String[] args) {
+      int i=0; int j= 0;
+      for (i = 0; i <= 4; i++){
+            for (j = 0; j <= i; j++){
+                System.out.print("*");
+                }
+               
+                System.out.println();
+        }
+    }
+}
+
+(Q2)
+
+i)Taking input using inputstreamreader
+
+import java.io.InputStream;
+import java.io.BufferedReader;
+
+    public class InputStreamReader {
+    
+    public static void main(String[] args) {
+
+       BufferedReader br = new BufferedReader(new java.io.InputStreamReader("System.in"));
+
+        System.out.println("Enter a string, integer, character and double: ");
+
+        String str = br.readLine();
+        int num = br.read();
+        char chr = (char) br.read();
+        double doub = br.read();
+
+        System.out.println("The string is: "+str);
+        System.out.println("The integer is: "+num);
+        System.out.println("The character is: "+chr);
+        System.out.println("The double is: "+doub);
+    }
+ 
+}
+
+
+(Q3)
+
+import java.util.Scanner;
+    public class Half Pyramid {
+    
+       System.out.println("Enter the number of rows: ");
+       Scanner obj = new Scanner(System.in);
+       int x = obj.nextInt();
+       
+       int rows, i, j;
+         for(i = 1; i <= rows; i++) {            #prints one row
+            
+            for(j = 1; j <= i; ++j) {
+                System.out.print("* ");
+            }
+         
+            System.out.print("\n");     #moves to the next row
+        }
+    
+    }
+    
+    
+(Q4)
+
+import java.util.Scanner;
+public class VowelCount{
+
+    public static void main(String[] args) {
+        int count = 0;
+        System.out.println("Enter input :");
+        Scanner obj = new Scanner(System.in);
+        String str = obj.nextLine();
+        
+         for (int i = 0 ; i < line.length(); i++){
+            char ch = line.charAt(i);
+            if(ch == 'a'|| ch == 'e'|| ch == 'i' ||ch == 'o' ||ch == 'u'||ch == ' '){
+                count ++;
+            }
+        }
+        System.out.println("Number of vowels in the given sentence is: "+count);
+    }
+}
+
+
+(Q5)
+
+import java.util.Scanner;
+
+
+public class bubblesort {
+    public static void main(String []args) {
+
+        int a, b, c, temp;
+        Scanner in = new Scanner(System.in);
+        
+        System.out.println("Input integers to bubblesort:");
+        
+        a = input.nextInt();
+        int[] array = new int[a];
+        System.out.println("Enter " + a + " integers: ");
+        
+         for (b = 0; b < num; b++)
+            array[b] = input.nextInt();
+
+        for (b = 0; b < ( a - 1 ); b++) {
+            for (c = 0; c < a - b - 1; c++) {
+                if (array[c] > array[c+1])
+                {
+                    temp = array{c];
+                    array[c] = array[c+1];
+                    array[c+1] = temp;
+                }
+            
+            }
+            
+        }
+
+        System.out.println("bubblesorted list of integers:");
+
+        for (b = 0; b < a; b++)
+            System.out.println(array[b]);
+    }
+
+}
+
+
+(Q6)
+
+import java.util.Scanner;
+
+class Calculator {
+public static void main(String[] args) {
+int i, j, answer;
+Scanner sc = new Scanner(System.in);
+System.out.println("Choose an operator: + = 1, - = 2, * = 3, sin = 4, cos = 5, tan = 6, exp = 7");
+int number = sc.nextInt();
+
+if (number == 1 || number == 2 || number == 3 || number == 7) {
+            System.out.println("Enter first number");
+            i = input.nextInt();
+            System.out.println("Enter second number");
+            j = input.nextInt();
+        }
+        else
+            i = input.nextInt();
+            
+         
+        switch (number) {
+
+            case 1:
+                answer = i + j;
+                System.out.println(i + " + " + j + " = " + answer);
+                break;
+
+
+            case 2:
+                answer = i - j;
+                System.out.println(i + " - " + j + " = " + answer);
+                break;
+
+
+            case 3:
+                answer = i * j;
+                System.out.println(i + " * " + j + " = " + answer);
+                break;
+
+
+            case '/':
+                answer = i / j;
+                System.out.println(i + " / " + j + " = " + answer);
+                break;
+
+            case 4:
+                answer = Math.toDegrees(Math.sin(i));
+                System.out.println("The value of sin("+i+")"+" is "+answer);
+                break;
+                
+            case 5:
+                answer = Math.toDegrees(Math.cos(i));
+                System.out.println("The value of cos("+i+")"+" is "+answer);
+                break;
+                
+            case 6:
+                answer = Math.toDegrees(Math.tan(i));
+                System.out.println("The value of tan("+i+")"+" is "+answer);
+                break;
+                
+            case 7:
+                answer = Math.pow(i, j);
+                System.out.println("The value of "+ i +"^"+ j +" is "+answer);
+                break;
+                
+            default:
+                System.out.println("Invalid operator!");
+                break;
+        }
+
+         input.close();
+    }
+
+} 
+
+
+(Q7)
+
+import java.util.Scanner;
+
+class Stringsequal {
+public static void main(String[] args) {
+
+  strings str1,str2;
+  Scanner myObj = new Scanner(System.in);
+  
+  System.out.println("Enter the first string");
+  str1 = myObj.nextLine();
+  
+  System.out.println("Enter the second string");
+  str2 = myObj.nextLine();
+  
+  if  (str1.equals(str2));
+  
+      System.out.print("The strings are equal.");
+  
+  else
+  
+      System.out.print("The strings are not equal.");
+      
+    }
+    
+}
+  
+
+(Q8)
+
+  
+import java.util.Scanner;
+class PalindromeNumber {
+    public static void main(String[] args) {
+        
+        Scanner input = new Scanner(System.in);
+        System.out.println("Enter an integer:");
+        int num = input.nextInt();
+        
+        int r,sum=0,temp; 
+        
+        temp=num;   
+        
+        
+        while(num>0){    
+          
+          r=num%10;  # Remainder 
+          sum=(sum*10)+r;    
+          num=num/10;    
+  }    
+  if(temp==sum)    
+   System.out.println("palindrome number ");    
+  else    
+   System.out.println("not palindrome");    
+    
+      }
+  
+  }  
+  
+
+(Q9) Acceleration and Endurance programme
+
+(Q10)
+
+
+
+
+  
+  
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
