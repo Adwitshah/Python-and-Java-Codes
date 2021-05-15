@@ -24,17 +24,24 @@ for str[i] in x:
     print(vowels)
     
  (Q5)
- def bubbleSort(arr):
-    n = len(arr)
-    for i in range(0,n):
-    swapped = False
- 
-      for j in range(0, n-i-1):
-      if arr[j] > arr[j+1] :
-                arr[j], arr[j+1] = arr[j+1], arr[j]
-                swapped = True
-      if swapped == False:
-            break
+def bubbleSort():
+  arr = []
+  num = int(input("Enter number of elements: "))
+  for i in range(num):
+    print("Enter element ", i+1, ": ")
+    j = int(input())
+    arr.append(j)
+
+  n = len(arr)
+
+  for i in range(n-1):
+	  for j in range(0, n-i-1):
+		  if arr[j] > arr[j+1] :
+			  arr[j], arr[j+1] = arr[j+1], arr[j]
+
+ return arr
+
+bubbleSort()
                 
 (Q6)
 (Q7)
@@ -168,4 +175,45 @@ msms = a[4:6]
 
 print("The fastest lap time is ", mm, ":", ss, ":", msms, ".")
 
+
 (Q13)
+
+def string_input():
+  string1 = input("Enter string 1: ")
+  string2 = input("Enter string 2: ")
+
+  if string1.lower() != string2.lower():
+    return 2
+
+  for i in range(len(string1)):
+    if(string1[i].upper() == string2[i].upper()):
+      if(string1[i] != string2[i]):
+        return 1
+  
+  return 0
+
+string_input()
+
+(Q14)
+
+def bubbleSort():
+  arr = []
+  num = int(input("Enter number of elements: "))
+  for i in range(num):
+    print("Enter element ", i+1, ": ")
+    j = int(input())
+    arr.append(j)
+
+  n = len(arr)
+
+  for i in range(n-1):
+	  for j in range(0, n-i-1):
+		  if arr[j] > arr[j+1] :
+			  arr[j], arr[j+1] = arr[j+1], arr[j]
+
+  print ("Sorted array is:")
+  for i in range(len(arr)):
+  	print ("%d" %arr[i]),
+
+bubbleSort()
+
