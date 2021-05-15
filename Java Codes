@@ -271,6 +271,201 @@ class PalindromeNumber {
 
 (Q10)
 
+import java.util.Scanner;
+public class CompareLapTime {
+      public static void main(String[] args) {
+           Scanner input = new Scanner(System.in);
+           
+            System.out.println("Enter the first lap time in mm:ss:msms format, without the colons:");
+            String a = input.nextLine();
+            System.out.println("Enter the second lap time in mm:ss:msms format, without the colons:");
+            String b = input.nextLine();
+            System.out.println("Enter the third lap time in mm:ss:msms format, without the colons:");
+            String c = input.nextLine();
+            
+              
+              int a1 = Integer.parseInt(a.substring(0, 2));                    # Dividing Strings to Substrings
+              int a2 = Integer.parseInt(a.substring(2, 4));
+              int a3 = Integer.parseInt(a.substring(4, 6));
+
+              int b1 = Integer.parseInt(b.substring(0, 2));
+              int b2 = Integer.parseInt(b.substring(2, 4));
+              int b3 = Integer.parseInt(b.substring(4, 6));
+
+              int c1 = Integer.parseInt(c.substring(0, 2));
+              int c2 = Integer.parseInt(c.substring(2, 4));
+              int c3 = Integer.parseInt(c.substring(4, 6));
+
+              int time1 = (a1 * 60) + (a2) + (a3 / 1000);                      # Converting minutes and milliseconds to seconds
+              int time2 = (b1 * 60) + (b2) + (b3 / 1000);
+              int time3 = (c1 * 60) + (c2) + (c3 / 1000);
+
+              
+            if (time1 > time2) {
+            if (time1 > time3)
+                System.out.print("The first lap is the fastest. (" +a1+ ":" +a2+ ":" +a3+ ")");
+            else
+                System.out.print("The third lap is the fastest. (" +c1+ ":" +c2+ ":" +c3+ ")");
+                
+        } else {
+            if (time2 > time3)
+                System.out.print("The second lap is the fastest. (" +b1+ ":" +b2+ ":" +b3+ ")");
+                
+                else
+                
+                System.out.print("The third lap is the fastest. (" +c1+ ":" +c2+ ":" +c3+ ")");
+        }
+        
+    }
+    
+}
+           
+       
+       
+(Q11)
+
+import java.util.Scanner;
+
+public class subtraction{
+int subtraction;
+    public static void main(String args[]){
+        Scanner input = new Scanner(System.in);
+        
+        System.out.println("Enter the first number");
+        int i = input.nextInt();
+        
+        System.out.println("Enter the second number");
+        int j = input.nextInt();
+        
+        int sub = a + (~b + 1);
+
+        System.out.println("The difference is " +sub+ ".");
+    }
+
+}
+
+
+(Q12)
+
+import java.util.Scanner;
+
+public class Q10WithoutIfElse {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+
+        System.out.println("Enter the first time in mm:ss:msms, no colons in between numbers:");
+        String x = input.nextLine();
+        System.out.println("Enter the second lap time in mm:ss:msms, no colons in between numbers:");
+        String y = input.nextLine();
+        System.out.println("Enter the third lap time in mm:ss:msms, no colons in between numbers:");
+        String z = input.nextLine();
+
+        int t1 = Integer.parseInt(x);
+        int t2 = Integer.parseInt(y);
+        int t3 = Integer.parseInt(z);
+
+        int temp = t1 < t2 ? t1 : t2;
+        int result = t3 < temp ? temp3 : temp;
+
+        String i= Integer.toString(result);
+
+        String mm = i.substring(0,2);
+        String ss = i.substring(2,4);
+        String msms = i.substring(4,6);
+
+        System.out.println("The fastest lap time is " +mm+ ":" +ss+ ":"  +msms+ ".");
+    }
+}
+
+(Q13)
+
+import java.util.Scanner;
+public class NewFunction {
+    public static void main(String[] args) {
+
+              Scanner input = new Scanner(System.in);
+              System.out.println("Enter the first string:");
+              String str1 = input.nextLine();
+              System.out.println("Enter the second string:");
+              String str2 = input.nextLine();   
+
+              String str3 = str5.toUpperCase();
+              String str4 = str6.toUpperCase();
+
+              if (str3.equals(str4)) {
+              if (str5.equals(str6))
+                   System.out.println("0: Both strings are same with case sensitivity.");
+            
+            else
+                   System.out.println("1: Both strings are same without case sensitivity.");
+           }
+           
+           else
+           
+               System.out.println("2: They are not same.");
+       }
+   }
+   
+
+(Q14) 
+
+import java.util.Scanner;
+public class BubbleSort{
+    public static void bubble(int array[], int num) {
+        int temp;
+        for (int i = 0; i < num; i++) {
+            for (int j = i; j < (num - i); j++) {
+                if (array[j - i] > array[j]) {
+                    temp = array[j - 1];
+                    array[j - 1] = array[j];
+                    array[j] = temp;}
+            }
+        }
+
+        for (int a = 0; a < num; a++) {
+            System.out.println("\t" + array[a]);}
+    }
+
+    public static void main(String args[]) {
+        Scanner input = new Scanner(System.in);
+        System.out.println("Enter the number of elements: ");
+        int n = input.nextInt();
+        int[] array1 = new int[n];
+
+        for (int i = 0; i < n; i++) {
+            System.out.println("Enter the elements of the array: ");
+            array1[i] = input.nextInt();
+        }
+        BubbleSort.bubble(array1, n);
+    }
+}
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+        
+        
+        
+        
+        
+           
+           
+           
+           
+           
+           
+        
+        
+
 
 
 
